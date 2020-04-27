@@ -1,3 +1,3 @@
 # machinelearning-andrewng
-Solutions of AndrewNg Machine Learning Exercises
-I will be adding the all exercises of the course as it progresses
+#Solutions of AndrewNg Machine Learning Exercises
+I will be adding the exercises of the course as it progresses
