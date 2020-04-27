@@ -16,8 +16,8 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCostMulti) and gradient here.
     %
-    predictions=X_norm*transpose(theta);
-    for iter1 =1:size(theta,2)
+    predictions=X_norm*theta;                                                            
+    for iter1 =1:size(theta,1)
         
     	theta(iter1)=theta(iter1)-(alpha*(1/m)*sum(transpose(predictions-y)*X_norm(:,iter1)));
         

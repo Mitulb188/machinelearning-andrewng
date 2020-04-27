@@ -13,9 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-predictions=X_norm*transpose(theta);
-error=predictions-y;
-squared_error=error.^2;
+predictions=X_norm*(theta);
+err=predictions-y;
+squared_error=err.^2;
 
 J=1*0.5*(1/m)*sum(squared_error);
 

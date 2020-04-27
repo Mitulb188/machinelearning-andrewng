@@ -6,18 +6,19 @@ m = length(y);
 [X_norm, mu, sigma] = featureNormalize(X);
 % Add intercept term to X
 X_norm = [ones(m, 1) X_norm];
-theta=zeros(1,no_of_features+1);
+
 %J = computeCostMulti(X_norm, y, theta);
 % Run gradient descent
 % Choose some alpha value
 alpha = 0.1;
 num_iters = 400;
 size(X_norm)
+size(theta,2)
 % Init Theta and Run Gradient Descent 
 
-[theta,J_history] = gradientDescentMulti(X_norm, y, theta, alpha, num_iters);
+%[theta,J_history] = gradientDescentMulti(X_norm, y, theta, alpha, num_iters);
 
-plot(J_history)
+%plot(J_history)
 
  %Display gradient descent's result
 fprintf('Theta computed from gradient descent:\n%f,\n%f,\n%f',theta(1),theta(2),theta(3))
